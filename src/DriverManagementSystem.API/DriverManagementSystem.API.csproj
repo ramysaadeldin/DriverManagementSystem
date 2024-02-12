@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <InvariantGlobalization>true</InvariantGlobalization>
+    <UserSecretsId>fc09d693-6eb2-4de4-9113-58d9593e0479</UserSecretsId>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+    <DockerfileContext>..\..</DockerfileContext>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MediatR" Version="12.2.0" />
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.19.6" />
+    <PackageReference Include="NLog" Version="5.2.8" />
+    <PackageReference Include="NLog.Web.AspNetCore" Version="5.3.8" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DriverManagementSystem.Application\DriverManagementSystem.Application.csproj" />
+    <ProjectReference Include="..\DriverManagementSystem.Common\DriverManagementSystem.Common.csproj" />
+    <ProjectReference Include="..\DriverManagementSystem.Domain\DriverManagementSystem.Domain.csproj" />
+    <ProjectReference Include="..\DriverManagementSystem.Infrastructure\DriverManagementSystem.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>
